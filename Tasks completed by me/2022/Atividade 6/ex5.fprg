@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ana"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-06 04:24:58 "/>
+        <attribute name="created" value="QW5hO0RFU0tUT1AtRExRTklQUzsyMDIyLTEyLTA2OyIwNDoxOTozMiAiOzI1ODM="/>
+        <attribute name="edited" value="QW5hO0RFU0tUT1AtRExRTklQUzsyMDIyLTEyLTA2OyIwNDoyNDo1OCAiOzM7MjY5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira um ano para confirmar se &#233; bissexto: &quot;" newline="True"/>
+            <input variable="ano"/>
+            <if expression="ano % 4 == 0">
+                <then>
+                    <if expression="ano % 100 == 0">
+                        <then>
+                            <if expression="ano % 400 == 0">
+                                <then>
+                                    <output expression="&quot;&#201; bissexto&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;N&#227;o &#233; bissexto&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#201; bissexto&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o &#233; bissexto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
